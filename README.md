@@ -8,6 +8,13 @@ A Botkit connector for Matrix
 ### Usage
 
 ```JavaScript
+let config = {
+    'baseUrl': 'https://matrix.org',
+    'botUserId': '@youruserid:matrix.org',
+    'password': 'yourpassword',
+    'localStorage': 'filepath'
+};
+
 require('botkit-matrix').MatrixController(config)
 .then((controller) => {
 
